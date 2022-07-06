@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header__connect {
+  margin-left: auto;
+}

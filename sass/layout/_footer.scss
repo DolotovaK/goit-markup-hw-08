@@ -1,0 +1,45 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  &__container {
+    display: flex;
+  }
+}
+
+.footer__contacts {
+  margin-top: 20px;
+  margin-right: 70px;
+}
+
+.footer__join {
+  padding-top: 12px;
+  margin-right: 93px;
+}
+
+.footer__join-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer__icon {
+  fill: inherit;
+}
+
+.footer__subscribe {
+  padding-top: 12px;
+  margin-left: auto;
+}
