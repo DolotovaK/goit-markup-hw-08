@@ -1,5 +1,24 @@
 .connect {
-  display: flex;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.connect__item {
+  display: block;
+  @include desctop {
+    display: flex;
+  }
+}
+
+.connect__item:not(:last-child) {
+  margin-bottom: 10px;
+  @include desctop {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .connect__link {
@@ -7,20 +26,27 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
   @include transition(color);
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+
+  @include desctop {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .connect__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+  @include desctop {
+    margin-right: 10px;
+  }
 }

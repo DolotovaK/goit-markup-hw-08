@@ -1,15 +1,44 @@
 .header {
   border-bottom: 1px solid #ececec;
-  .container {
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  > .container {
     display: flex;
     align-items: center;
   }
 }
 
 .header__logo {
-  margin-right: 93px;
+  @include tablet {
+    margin-right: 88px;
+  }
+  @include desctop {
+    margin-right: 93px;
+  }
 }
 
 .header__connect {
   margin-left: auto;
+}
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-open-icon {
+  fill: #212121;
+  @include transition(fill);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

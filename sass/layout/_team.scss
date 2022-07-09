@@ -6,13 +6,19 @@
 
 .team__list {
   display: flex;
-  margin-left: -30px;
+  flex-wrap: wrap;
+  gap: var(--typical-margin);
 }
 
 .team__item {
   background-color: var(--main-background-color);
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: var(--typical-margin);
+  width: 100%;
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desctop {
+    flex-basis: calc((100% - 90px) / 4);
+  }
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -40,13 +46,3 @@
   color: var(--main-text-color);
   margin-bottom: 16px;
 }
-
-/* .team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: #ffffff;
-} */

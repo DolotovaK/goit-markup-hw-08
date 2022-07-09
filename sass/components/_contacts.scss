@@ -7,7 +7,10 @@
 }
 
 .contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @include desctop {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__link {

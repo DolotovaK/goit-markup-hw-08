@@ -1,5 +1,5 @@
 .benefits {
-  @media screen and (min-width: 1200px) {
+  @include desctop {
     padding-bottom: 0;
   }
 }
@@ -13,15 +13,12 @@
 
 .benefits__item {
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc((100% - 30px) / 2);
   }
-
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 120px) / 4);
+  @include desctop {
+    flex-basis: calc((100% - 90px) / 4);
   }
-  // flex-basis: calc((100% - 120px) / 4);
-  // margin-left: var(--typical-margin);
 }
 
 .benefits__wrap {
@@ -41,6 +38,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .benefits__text {

@@ -1,3 +1,9 @@
+.about {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .about__list {
   display: flex;
   margin-left: -30px;
@@ -25,11 +31,3 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
-/* .about-desc span {
-  position: absolute;
-  min-width: 205px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
