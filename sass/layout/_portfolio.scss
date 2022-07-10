@@ -26,8 +26,6 @@
   @include transition;
   @include transition(color);
   @include transition(box-shadow);
-  // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  //   color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: #ffffff;
@@ -119,7 +117,6 @@
   left: 0;
   transform: translateY(100%);
   @include transition(transform);
-  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
   width: 100%;
   padding: 63px 24px;
@@ -132,5 +129,10 @@
   .projects-examples-link:hover &,
   .projects-examples-link:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 24px;
+    font-size: 14px;
   }
 }

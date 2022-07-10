@@ -305,6 +305,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity;
   transition-duration: 250ms;
@@ -1281,4 +1282,10 @@ body {
 }
 .projects-examples-link:hover .projects-examples-overtext, .projects-examples-link:focus .projects-examples-overtext {
   transform: translateY(0);
+}
+@media screen and (max-width: 479px) {
+  .projects-examples-overtext {
+    padding: 24px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
